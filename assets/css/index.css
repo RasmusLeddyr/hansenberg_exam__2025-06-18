@@ -305,5 +305,38 @@ body {
 }
 /* CONTACT )-*/
 
+/*-( FOOTER */
+#footer {
+  background: var(--col__back_foot);
+  color: var(--col__text_main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 65px;
+  padding-bottom: 42px;
+}
+#footer div {
+  margin-right: auto;
+}
+#footer h3 {
+  --adap__text_cut: 0.75;
+  margin-bottom: 25px;
+}
+#footer p {
+  --adap__text: 16;
+  --adap__text_cut: 0.75;
+}
+#footer p:nth-last-of-type(n + 2) {
+  margin-bottom: 0.5em;
+}
+#footer ul {
+  display: flex;
+  gap: 44px;
+}
+#footer ul img {
+  width: 20px;
+}
+/* FOOTER )-*/
+
 /*-( */
 /* )-*/
