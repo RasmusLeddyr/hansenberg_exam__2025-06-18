@@ -1,7 +1,6 @@
 /*-( LINK OTHER CSS FILES */
 @import url("main.css");
 @import url("navigation.css");
-@import url("footer.css");
 /* LINK OTHER CSS FILES )-*/
 
 /*-( PAGE SETUP */
@@ -48,43 +47,6 @@ body {
   font-family: "Noto Sans";
 }
 /* PAGE SETUP )-*/
-
-/*-( NAV */
-.page_nav {
-  display: flex;
-  align-items: center;
-  margin-bottom: 80px;
-  width: 100%;
-}
-.page_nav .logo {
-  --adap__width: 133;
-  --adap__width_cut: 0.75;
-  height: 100%;
-  margin-right: auto;
-}
-.page_nav .list {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: right;
-  gap: calc(75px - 14px);
-}
-.page_nav .list a {
-  padding: 8px 14px;
-  --adap__text: 18;
-  --adap__text_min: 16;
-  font-weight: bold;
-  color: var(--col__text_main);
-  border-radius: 0.75em;
-}
-.page_nav .list a:hover {
-  background-color: var(--col__nav_slct);
-  color: var(--col__text_slct);
-}
-.page_nav .togl {
-  display: none;
-}
-/* NAV )-*/
 
 /*-( HERO */
 #hero {
@@ -294,6 +256,9 @@ body {
 }
 #contact form input::placeholder {
   color: var(--col__text_form);
+}
+#contact form textarea {
+  resize: none;
 }
 #contact form textarea::placeholder {
   color: var(--col__text_form);
