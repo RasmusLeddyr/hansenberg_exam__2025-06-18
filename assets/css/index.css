@@ -1,0 +1,33 @@
+/*-( LINK OTHER CSS FILES */
+@import url("main.css");
+@import url("navigation.css");
+@import url("footer.css");
+/* LINK OTHER CSS FILES )-*/
+
+/*-( PAGE SETUP */
+:root {
+  /*page design width*/
+  --base_width: 1920;
+  --page-padding: calc((143 / var(--base_width)) * 100vw);
+
+  /*colours*/
+  --col_action: rgb(255, 127, 0);
+  --col_btn-txt: rgb(127, 127, 127);
+}
+h1 {
+  --text-size: 64;
+  font-weight: var(--fw_bold);
+}
+h2 {
+  --text-size: 48;
+  font-weight: var(--fw_bold);
+}
+h3 {
+  --text-size: 32;
+  font-weight: var(--fw_bold);
+}
+h4 {
+  --text-size: 24;
+  font-weight: var(--fw_bold);
+}
+/* PAGE SETUP )-*/
