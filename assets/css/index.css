@@ -264,6 +264,7 @@ body {
   color: var(--col__text_form);
 }
 #contact form .submit {
+  cursor: pointer;
   border: 0;
   background-color: var(--col__text_secn);
   color: var(--col__back_secn);
