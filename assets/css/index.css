@@ -182,6 +182,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 73px;
+  padding-bottom: 70px;
 }
 #images h2 {
   --adap__text_cut: 0.5;
@@ -197,8 +199,8 @@ body {
   color: var(--col__text_secn);
   margin-bottom: 35px;
   text-align: center;
+  font-weight: bold;
 }
-
 #images .img_gal {
   display: flex;
   flex-direction: row-reverse;
@@ -229,6 +231,79 @@ body {
   outline: 4px solid var(--col__back_cont);
 }
 /* IMAGE GALLERY )-*/
+
+/*-( CONTACT */
+#contact {
+  background-color: var(--col__back_cont);
+  color: var(--col__text_secn);
+  padding-top: 70px;
+  padding-bottom: 97px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#contact h2 {
+  --adap__text_cut: 0.5;
+  margin-bottom: 22px;
+}
+#contact p {
+  --adap__text: 16;
+  --adap__text_cut: 0.75;
+  --adap__width: 666;
+  --adap__width_cut: 0.75;
+  margin-bottom: 32px;
+  font-weight: bold;
+}
+#contact form {
+  width: 100%;
+  display: grid;
+  gap: 32px;
+  grid-template-areas:
+    "name mesg"
+    "subj mesg"
+    "email mesg"
+    "send send";
+}
+#contact form :nth-child(1) {
+  grid-area: name;
+}
+#contact form :nth-child(2) {
+  grid-area: subj;
+}
+#contact form :nth-child(3) {
+  grid-area: email;
+}
+#contact form :nth-child(4) {
+  grid-area: mesg;
+}
+#contact form :nth-child(5) {
+  grid-area: send;
+}
+#contact form * {
+  --adap__text: 16;
+  background-color: white;
+  font-weight: bold;
+  color: black;
+  padding: 13px 16px;
+  border: 2px solid var(--col__text_secn);
+  outline: 0;
+}
+#contact form input {
+  height: 48px;
+}
+#contact form input::placeholder {
+  color: var(--col__text_form);
+}
+#contact form textarea::placeholder {
+  color: var(--col__text_form);
+}
+#contact form .submit {
+  border: 0;
+  background-color: var(--col__text_secn);
+  color: var(--col__back_secn);
+}
+/* CONTACT )-*/
 
 /*-( */
 /* )-*/
