@@ -7,8 +7,8 @@
 /*-( PAGE SETUP */
 :root {
   /*page design width*/
-  --base_width: 1920;
-  --page-padding: calc((143 / var(--base_width)) * 100vw);
+  --base_width: 1366;
+  --page_padding: calc((140 / var(--base_width)) * 100vw);
 
   /*colours*/
   --col__text_main: #ffffff;
@@ -17,6 +17,7 @@
   --col__text_slct: #003557;
   --col__nav_slct: #00fdff;
 }
+
 h1 {
   --text-size: 70;
   font-weight: bold;
@@ -31,5 +32,14 @@ h3 {
   --text-size: 32;
   font-weight: bold;
   font-family: "Noto Sans";
+}
+
+#hero,
+#intro,
+#ai,
+#images,
+#contact,
+#footer {
+  padding: 0, var(--page_padding);
 }
 /* PAGE SETUP )-*/
