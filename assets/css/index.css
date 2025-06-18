@@ -11,23 +11,25 @@
   --page-padding: calc((143 / var(--base_width)) * 100vw);
 
   /*colours*/
-  --col_action: rgb(255, 127, 0);
-  --col_btn-txt: rgb(127, 127, 127);
+  --col__text_main: #ffffff;
+  --col__text_secn: #191919;
+  --col__text_form: #3e3e3e;
+  --col__text_slct: #003557;
+  --col__nav_slct: #00fdff;
 }
 h1 {
-  --text-size: 64;
-  font-weight: var(--fw_bold);
+  --text-size: 70;
+  font-weight: bold;
+  font-family: "Noto Sans";
 }
 h2 {
-  --text-size: 48;
-  font-weight: var(--fw_bold);
+  --text-size: 50;
+  font-weight: bold;
+  font-family: "Noto Sans";
 }
 h3 {
   --text-size: 32;
-  font-weight: var(--fw_bold);
-}
-h4 {
-  --text-size: 24;
-  font-weight: var(--fw_bold);
+  font-weight: bold;
+  font-family: "Noto Sans";
 }
 /* PAGE SETUP )-*/
