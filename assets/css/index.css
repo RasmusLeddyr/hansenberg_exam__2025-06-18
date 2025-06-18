@@ -19,17 +19,17 @@
 }
 
 h1 {
-  --text-size: 70;
+  --adap__text: 70;
   font-weight: bold;
   font-family: "Noto Sans";
 }
 h2 {
-  --text-size: 50;
+  --adap__text: 50;
   font-weight: bold;
   font-family: "Noto Sans";
 }
 h3 {
-  --text-size: 32;
+  --adap__text: 32;
   font-weight: bold;
   font-family: "Noto Sans";
 }
@@ -40,6 +40,74 @@ h3 {
 #images,
 #contact,
 #footer {
-  padding: 0, var(--page_padding);
+  padding: 0 var(--page_padding);
 }
 /* PAGE SETUP )-*/
+
+/*-( NAV */
+.page_nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+  width: 100%;
+}
+.page_nav .logo {
+  --adap__width: 133;
+  --adap__width_cut: 0.75;
+  height: 100%;
+  margin-right: auto;
+}
+.page_nav .list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: right;
+  gap: calc(75px - 14px);
+}
+.page_nav .list a {
+  padding: 8px 14px;
+  --adap__text: 18;
+  --adap__text_min: 16;
+  font-family: "Noto Sans";
+  font-weight: bold;
+  color: var(--col__text_main);
+  border-radius: 0.75em;
+}
+.page_nav .list a:hover {
+  background-color: var(--col__nav_slct);
+  color: var(--col__text_slct);
+}
+.page_nav .togl {
+  display: none;
+}
+/* NAV )-*/
+
+/*-( HERO */
+#hero {
+  padding-top: 44px;
+  padding-bottom: 211px;
+  background-image: url(../img/ai_baggrund.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#hero h1 {
+  --adap__text_cut: 0.75;
+  color: var(--col__text_main);
+  margin-bottom: 13px;
+}
+#hero p {
+  --adap__text_cut: 0.75;
+  --adap__text: 18;
+  --adap__width: 560;
+  --adap__width_cut: 0.5;
+  color: var(--col__text_main);
+  font-weight: bold;
+}
+/* HERO )-*/
+
+/*-(*/
+/*)-*/
