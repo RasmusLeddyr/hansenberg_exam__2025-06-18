@@ -16,22 +16,23 @@
   --col__text_form: #3e3e3e;
   --col__text_slct: #003557;
   --col__nav_slct: #00fdff;
+  --col__back_main: #003557;
+  --col__back_secn: #fbfbfb;
+  --col__back_cont: #46a4d3;
+  --col__back_foot: #191919;
 }
 
 h1 {
   --adap__text: 70;
   font-weight: bold;
-  font-family: "Noto Sans";
 }
 h2 {
   --adap__text: 50;
   font-weight: bold;
-  font-family: "Noto Sans";
 }
 h3 {
   --adap__text: 32;
   font-weight: bold;
-  font-family: "Noto Sans";
 }
 
 #hero,
@@ -41,6 +42,10 @@ h3 {
 #contact,
 #footer {
   padding: 0 var(--page_padding);
+}
+
+body {
+  font-family: "Noto Sans";
 }
 /* PAGE SETUP )-*/
 
@@ -68,7 +73,6 @@ h3 {
   padding: 8px 14px;
   --adap__text: 18;
   --adap__text_min: 16;
-  font-family: "Noto Sans";
   font-weight: bold;
   color: var(--col__text_main);
   border-radius: 0.75em;
@@ -109,5 +113,43 @@ h3 {
 }
 /* HERO )-*/
 
-/*-(*/
-/*)-*/
+/*-( INTRO */
+#intro {
+  display: flex;
+  align-items: center;
+  color: var(--col__text_secn);
+  background-color: var(--col__back_secn);
+  padding-top: 50px;
+  padding-bottom: 44px;
+  gap: 60px;
+}
+#intro h2 {
+  --adap__text_cut: 0.5;
+  margin-bottom: 17px;
+}
+#intro p {
+  --adap__text: 16;
+  --adap__text_min: 12;
+  --adap__width: 536;
+  --adap__width_cut: 0.75;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+#intro a {
+  --adap__text: 16;
+  font-weight: bold;
+  background-color: var(--col__text_slct);
+  color: var(--col__text_main);
+  padding: 13px 30px;
+  border-radius: 0.5em;
+  display: inline-block;
+}
+#intro img {
+  --adap__width: 486;
+  --adap__width_cut: 0.5;
+  height: 100%;
+}
+/* INTRO )-*/
+
+/*-( */
+/* )-*/
